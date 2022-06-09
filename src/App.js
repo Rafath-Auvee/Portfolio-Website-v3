@@ -7,7 +7,7 @@ import { ThemeContext } from "./context/ThemeContext.js";
 import Home from "./components/Home/Home.js";
 import About from "./components/About/About.js"
 import Project from "./components/Projects/Project.js"
-
+import Contact from "./components/Contact/Contact.js"
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   return (
@@ -18,6 +18,7 @@ function App() {
           <Home />
           <About/>
           <Project/>
+          <Contact/>
         </div>
       </div>
     </ThemeContext.Provider>
