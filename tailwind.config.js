@@ -5,13 +5,10 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["dark"],
-    styled: true,
-    base: true,
-    utils: true,
-    logs: true,
-    rtl: false,
-    prefix: "",
+    themes: [
+      
+    ],
+
     darkTheme: "dark",
   },
 };
