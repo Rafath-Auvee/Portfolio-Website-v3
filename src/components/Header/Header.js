@@ -3,30 +3,36 @@ import pdf from "../../assets/Rafath Bin Zafar Auvee.pdf";
 
 import DarkModeToggle from "../Utilities/DarkModeToggle.js";
 import { ThemeContext } from "../../context/ThemeContext.js";
-import { Link } from "react-scroll";
+import { HashLink } from 'react-router-hash-link';
+
 const Header = () => {
   const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);
   const menuItems = (
     <>
       <li>
-        <Link to="home" spy={true} smooth={true} offset={-150} duration={500}>
+        <HashLink smooth to="/#home" >
           Home
-        </Link>
+        </HashLink>
       </li>
       <li>
-        <Link to="about" spy={true} smooth={true} offset={-200} duration={500}>
+        <HashLink smooth to="/blog" >
+          Blog
+        </HashLink>
+      </li>
+      <li>
+        <HashLink smooth to="/#about" >
           About
-        </Link>
+        </HashLink>
       </li>
       <li>
-        <Link to="project" spy={true} smooth={true} offset={-200} duration={500}>
+        <HashLink smooth to="/#project" >
           Projects
-        </Link>
+        </HashLink>
       </li>
       <li>
-        <Link to="contact" spy={true} smooth={true} offset={-150}  duration={500}>
+        <HashLink smooth to="/#contact" >
           Contact
-        </Link>
+        </HashLink>
       </li>
     </>
   );

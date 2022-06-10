@@ -5,6 +5,7 @@ import Header from "./components/Header/Header.js";
 import { ThemeContext } from "./context/ThemeContext.js";
 import HomePage from "./components/HomePage.js"
 import ProjectDetail from "./components/Projects/ProjectDetail.js"
+import Blog from "./components/Blog/Blog.js"
 import {
   Routes,
   Route,
@@ -18,7 +19,7 @@ function App() {
         <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/projectdescription/:id' element={<ProjectDetail/>}/>
-        {/* <Route path='/blog' element={<Blog/>}/> */}
+        <Route path='/blog' element={<Blog/>}/>
         </Routes>
       </div>
     
