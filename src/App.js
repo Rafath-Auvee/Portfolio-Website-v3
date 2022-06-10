@@ -16,7 +16,7 @@ function App() {
         <Header />
         <div className="ml-10 lg:ml-20 ">
           <Home />
-          <About/>
+          <About />
           <Project/>
           <Contact/>
         </div>
