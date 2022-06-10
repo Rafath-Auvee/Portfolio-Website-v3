@@ -1,29 +1,37 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import pdf from "../../assets/Rafath Bin Zafar Auvee.pdf";
-import { Link } from "react-router-dom";
+
 import DarkModeToggle from "../Utilities/DarkModeToggle.js";
 import { ThemeContext } from "../../context/ThemeContext.js";
-
+import { Link } from "react-scroll";
 const Header = () => {
   const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);
   const menuItems = (
     <>
       <li>
-        <a href="#home">Home</a>
+        <Link to="home" spy={true} smooth={true} offset={-150} duration={500}>
+          Home
+        </Link>
       </li>
       <li>
-        <a href="#about">About</a>
+        <Link to="about" spy={true} smooth={true} offset={-200} duration={500}>
+          About
+        </Link>
       </li>
       <li>
-        <a href="#project">Projects</a>
+        <Link to="project" spy={true} smooth={true} offset={-200} duration={500}>
+          Projects
+        </Link>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <Link to="contact" spy={true} smooth={true} offset={-200}  duration={500}>
+          Contact
+        </Link>
       </li>
     </>
   );
   return (
-    <div >
+    <div>
       <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
@@ -50,7 +58,7 @@ const Header = () => {
               {menuItems}
             </ul>
           </div>
-          <a href="#" className="btn btn-ghost normal-case text-xl">
+          <a href="#home" className="btn btn-ghost normal-case text-xl">
             Rafath Auvee
           </a>
         </div>
@@ -68,7 +76,7 @@ const Header = () => {
             Resume
           </a>
           <DarkModeToggle onToggle={setIsDarkMode} />
-          {console.log({isDarkMode})}
+          {console.log({ isDarkMode })}
         </div>
       </div>
     </div>
