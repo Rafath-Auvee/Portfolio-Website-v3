@@ -1,6 +1,8 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext.js";
 const Project = () => {
+  const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);
+
   const projects = [
     {
       name: "Marley Electronics",
@@ -26,9 +28,11 @@ const Project = () => {
       <p className="text-5xl text-center mb-10">
         Some of my noteworthy projects
       </p>
-      <div className="grid lg:grid-cols-3 gap-4 sm:grid-cols-1 md:grid-cols-2 mr-10">
-        {projects.map((project,index) => 
-          <div className="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:text-white dark:border-gray-700">
+      <div className="grid lg:grid-cols-3 gap-4 sm:grid-cols-1 md:grid-cols-2 mr-10 mt-32">
+        {projects.map((project, index) => (
+          <div
+            className={`p-6 max-w-sm  rounded-lg border  shadow-lg  dark: ${isDarkMode ? `text-black outline-white border-gray-200 shadow-white` : `text-white outline-gray-800 border-gray-700 shadow-black`}`}
+          >
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {project.name}
             </h5>
@@ -55,7 +59,7 @@ const Project = () => {
               </svg>
             </a>
           </div>
-        )}
+        ))}
       </div>
     </div>
   );
