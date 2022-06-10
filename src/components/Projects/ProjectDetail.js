@@ -12,23 +12,33 @@ const ProjectDetail = () => {
         "Manufacturer website made with React, React Router, DaisyUI, Node.js, Express, MongoDB, Firebase Authentication. User can sign in / sign up and can order for product. Also secure payment system implemented with stripe. Admin can make admin any user, track order.",
       link: "https://marley-electronics.web.app",
       tools_used: ['ReactJS','ExpressJS','NodeJS', 'Firebase','MongoDB','React-Toast','Stripe'],
+      img1: "https://i.ibb.co/4mMpQSJ/image.png",
+      img2: "https://i.ibb.co/NsWzjvj/image.png",
+      img3: "https://i.ibb.co/jWb2kR5/image.png",
     },
     {
       id: 2,
-      name: "Marley Electronics",
+      name: "Paratronics Warehouse Solution",
       description:
-        "Manufacturer website made with React, React Router, DaisyUI, Node.js, Express, MongoDB, Firebase Authentication. User can sign in / sign up and can order for product. Also secure payment system implemented with stripe. Admin can make admin any user, track order.",
-      link: "https://marley-electronics.web.app",
+        "Inventory Website, Full stack website where we used to keep records of our products and suppliers can request for product and order. Fully dynamic made with React, React Router, MongoDB, Express, Bootstrap, Tailwind CSS, Node.js, Firebase Authentication. User can decrement the order quantity or increase vice versa and also add, delete and update product.",
+      link: "https://paratronics-2213d.web.app",
       tools_used: ['ReactJS','ExpressJS','NodeJS', 'Firebase','MongoDB','React-Toast','Stripe'],
+      img1: "https://i.ibb.co/6P0jPkK/image.png",
+      img2: "https://i.ibb.co/ZXC2s20/image.png",
+      img3: "https://i.ibb.co/YRzTBHf/image.png",
     },
     {
       id: 3,
-      name: "Marley Electronics",
+      name: "Paradis Island Electronic Shop",
       description:
-        "Manufacturer website made with React, React Router, DaisyUI, Node.js, Express, MongoDB, Firebase Authentication. User can sign in / sign up and can order for product. Also secure payment system implemented with stripe. Admin can make admin any user, track order.",
-      link: "https://marley-electronics.web.app",
-      tools_used: ['ReactJS','ExpressJS','NodeJS', 'Firebase','MongoDB','React-Toast','Stripe'],
+        "Paradis Island Electronic Shop. A beautiful landing page made react and react router dom",
+      link: "https://auvee-assignment-9.netlify.app",
+      tools_used: ['ReactJS','ExpressJS','NodeJS', 'Firebase'],
+      img1: "https://i.ibb.co/gP6q5zR/image.png",
+      img2: "https://i.ibb.co/tXspvXB/image.png",
+      img3: "https://i.ibb.co/LPktHks/image.png",
     },
+    
   ];
   const project = projects.find((project) => project.id >= id);
   return (

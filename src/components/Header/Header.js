@@ -1,36 +1,35 @@
 import React, { useContext } from "react";
 import pdf from "../../assets/Rafath Bin Zafar Auvee.pdf";
-
 import DarkModeToggle from "../Utilities/DarkModeToggle.js";
 import { ThemeContext } from "../../context/ThemeContext.js";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);
   const menuItems = (
     <>
       <li>
-        <HashLink smooth to="/#home" >
+        <HashLink smooth to="/#home">
           Home
         </HashLink>
       </li>
       <li>
-        <HashLink smooth to="/blog" >
+        <HashLink smooth to="/blog">
           Blog
         </HashLink>
       </li>
       <li>
-        <HashLink smooth to="/#about" >
+        <HashLink smooth to="/#about">
           About
         </HashLink>
       </li>
       <li>
-        <HashLink smooth to="/#project" >
+        <HashLink smooth to="/#project">
           Projects
         </HashLink>
       </li>
       <li>
-        <HashLink smooth to="/#contact" >
+        <HashLink smooth to="/#contact">
           Contact
         </HashLink>
       </li>
