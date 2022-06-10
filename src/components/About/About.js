@@ -2,7 +2,7 @@ import React from "react";
 import Auvee from "../../assets/Rafath auvee.png";
 const About = () => {
   return (
-    <div className=" lg:py-52 lg:py-30 lg:px-0 mr-16">
+    <div className=" lg:py-52 lg:py-30 lg:px-0 mr-16" id="about">
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
