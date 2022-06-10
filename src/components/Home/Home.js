@@ -17,8 +17,8 @@ const Home = () => {
             .start();
         }}
       />
-      </p> 
-      <button className={`btn btn-outline btn-lg mb-3 hover:shadow-lg  ${isDarkMode ? 'hover:bg-white hover:shadow-white hover:text-black ease-in duration-300 ' : 'hover:bg-black hover:text-white ease-in duration-300 hover:shadow-black '}`}>Say Hello! 👋🏻</button>
+      </p>
+      <a href="mailto:rafath.auvee@gmail.com" className={`btn btn-outline btn-lg mb-3 hover:shadow-lg  ${isDarkMode ? 'hover:bg-white hover:shadow-white hover:text-black ease-in duration-300 ' : 'hover:bg-black hover:text-white ease-in duration-300 hover:shadow-black '}`}>Say Hello! 👋🏻</a>
     </div>
   );
 };

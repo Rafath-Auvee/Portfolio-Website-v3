@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 const ProjectDetail = () => {
   const { id } = useParams();
   console.log(id);
+
   const projects = [
     {
       id: 1,
@@ -11,10 +12,20 @@ const ProjectDetail = () => {
       description:
         "Manufacturer website made with React, React Router, DaisyUI, Node.js, Express, MongoDB, Firebase Authentication. User can sign in / sign up and can order for product. Also secure payment system implemented with stripe. Admin can make admin any user, track order.",
       link: "https://marley-electronics.web.app",
-      tools_used: ['ReactJS','ExpressJS','NodeJS', 'Firebase','MongoDB','React-Toast','Stripe'],
+      tools_used: [
+        "ReactJS",
+        "ExpressJS",
+        "NodeJS",
+        "Firebase",
+        "MongoDB",
+        "React-Toast",
+        "Stripe",
+      ],
       img1: "https://i.ibb.co/4mMpQSJ/image.png",
       img2: "https://i.ibb.co/NsWzjvj/image.png",
       img3: "https://i.ibb.co/jWb2kR5/image.png",
+      clientrepo: "https://github.com/Rafath-Bin-Zafar-Auvee/Marley-Electronics-Client",
+      serverrepo: "https://github.com/Rafath-Bin-Zafar-Auvee/Marley-Electronics-Server",
     },
     {
       id: 2,
@@ -22,10 +33,20 @@ const ProjectDetail = () => {
       description:
         "Inventory Website, Full stack website where we used to keep records of our products and suppliers can request for product and order. Fully dynamic made with React, React Router, MongoDB, Express, Bootstrap, Tailwind CSS, Node.js, Firebase Authentication. User can decrement the order quantity or increase vice versa and also add, delete and update product.",
       link: "https://paratronics-2213d.web.app",
-      tools_used: ['ReactJS','ExpressJS','NodeJS', 'Firebase','MongoDB','React-Toast','Stripe'],
+      tools_used: [
+        "ReactJS",
+        "ExpressJS",
+        "NodeJS",
+        "Firebase",
+        "MongoDB",
+        "React-Toast",
+        "Stripe",
+      ],
       img1: "https://i.ibb.co/6P0jPkK/image.png",
       img2: "https://i.ibb.co/ZXC2s20/image.png",
       img3: "https://i.ibb.co/YRzTBHf/image.png",
+      clientrepo: "https://github.com/Rafath-Bin-Zafar-Auvee/Paratronics-Warehouse-Solution-Client",
+      serverrepo: "https://github.com/Rafath-Bin-Zafar-Auvee/Paratronics-Warehouse-Solution-Server",
     },
     {
       id: 3,
@@ -33,12 +54,13 @@ const ProjectDetail = () => {
       description:
         "Paradis Island Electronic Shop. A beautiful landing page made react and react router dom",
       link: "https://auvee-assignment-9.netlify.app",
-      tools_used: ['ReactJS','ExpressJS','NodeJS', 'Firebase'],
+      tools_used: ["ReactJS", "ExpressJS", "NodeJS", "Firebase"],
       img1: "https://i.ibb.co/gP6q5zR/image.png",
       img2: "https://i.ibb.co/tXspvXB/image.png",
       img3: "https://i.ibb.co/LPktHks/image.png",
+      clientrepo: "https://github.com/programming-hero-web-course-4/product-analysis-website-Rafath-Bin-Zafar-Auvee",
+      serverrepo: "",
     },
-    
   ];
   const project = projects.find((project) => project.id >= id);
   return (
@@ -85,11 +107,19 @@ const ProjectDetail = () => {
           <h1 class="text-3xl text-center font-bold mb-7">Tools I've used</h1>
           <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
             {project.tools_used.map((tool) => (
-              
-                <div className="badge badge-outline hover:shadow-lg hover:shadow-green-700">{tool}</div>
-              ))}
+              <div className="badge badge-outline hover:shadow-lg hover:shadow-green-700">
+                {tool}
+              </div>
+            ))}
+
           </div>
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-10 ml-3">
+          <a href={project.link} target="_blank" rel="noopener noreferrer" class="btn btn-active">Live Link</a>
+          <a href={project.serverrepo} target="_blank" rel="noopener noreferrer" class="btn btn-active">Server Repo</a>
+          <a href={project.clientrepo} target="_blank" rel="noopener noreferrer" class="btn btn-active">Client Repo</a>
         </div>
+        </div>
+        
       </div>
     </div>
   );
