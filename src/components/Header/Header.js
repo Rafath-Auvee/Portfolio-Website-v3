@@ -24,7 +24,7 @@ const Header = () => {
         </Link>
       </li>
       <li>
-        <Link to="contact" spy={true} smooth={true} offset={-200}  duration={500}>
+        <Link to="contact" spy={true} smooth={true} offset={-150}  duration={500}>
           Contact
         </Link>
       </li>
