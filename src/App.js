@@ -14,7 +14,7 @@ function App() {
     <ThemeContext.Provider value={{ isDarkMode, setIsDarkMode }}>
       <div className={`${isDarkMode ? 'bg-black text-white ease-in duration-300 ' : 'bg-gray-100 text-black ease-in duration-300 '}`}>
         <Header />
-        <div className="ml-20">
+        <div className="ml-10 lg:ml-20 ">
           <Home />
           <About/>
           <Project/>

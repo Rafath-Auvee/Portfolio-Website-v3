@@ -4,9 +4,9 @@ import { ThemeContext } from "../../context/ThemeContext.js";
 const Home = () => {
   const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);
   return (
-    <div id="home" className={`mt-40`}>
-      <p class="text-3xl mb-3">Hi I am,</p>
-      <p class="text-5xl mb-3 ...">Rafath Bin Zafar Auvee</p>
+    <div id="home" className={`mt-40 my-36`}>
+      <p className="text-3xl mb-3">Hi I am,</p>
+      <p className="text-5xl mb-3 ...">Rafath Bin Zafar Auvee</p>
       <p className="text-5xl mb-5">
 
       <Typewriter 
@@ -17,8 +17,8 @@ const Home = () => {
             .start();
         }}
       />
-      </p>
-      <button class="btn btn-outline hover:bg-success hover:duration-300 mb-3">Say Hello! 👋🏻</button>
+      </p> 
+      <button className={`btn btn-outline btn-lg mb-3 hover:shadow-lg  ${isDarkMode ? 'hover:bg-white hover:shadow-white hover:text-black ease-in duration-300 ' : 'hover:bg-black hover:text-white ease-in duration-300 hover:shadow-black '}`}>Say Hello! 👋🏻</button>
     </div>
   );
 };

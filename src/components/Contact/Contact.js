@@ -16,7 +16,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="w-full md:w-96 md:max-w-full mx-auto">
+    <div className="w-full md:w-96 md:max-w-full mx-auto" id="contact">
       <div className="p-6 border border-gray-300 sm:rounded-md">
         <form method="POST" action="" onSubmit={sendEmail}>
           <label className="block mb-6">
